@@ -1,5 +1,9 @@
 ## Setup
 
+```
+sudo dnf install selinux-policy-devel
+```
+
 ### Create a custom SELinux user
 
 ```

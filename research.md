@@ -70,7 +70,7 @@ Despite having the SELinux users available, my account is still unconfined. This
 ### Create a new Account
 Creating a new account and confining it to a user can be done with the command
 ```bash
-# useradd -Z <selinx_u> <example_account>
+sudo useradd -Z <selinx_u> <example_account>
 ```
 
 This will create an account called `<example_account>` which automatically maps to the `<selinx_u>`. For example, I create an account called `staff` which maps to the `staff_u` user. Now when I login using `staff`, my label becomes:
