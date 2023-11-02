@@ -20,12 +20,18 @@ sudo passwd example
 ### Setup SSH
 
 ```
-mkdir /home/example/.ssh
+sudo mkdir /home/example/.ssh
+sudo chown -R example:example /home/example/.ssh
+```
 
-chown -R example:example /home/example/.ssh
-cp ~/.ssh/authorized_keys /home/example/.ssh
-chmod 700 /home/example/.ssh
-chmod 600 /home/example/.ssh/authorized_keys
+```
+sudo cp ~/.ssh/authorized_keys /home/example/.ssh
+sudo chown -R example:example /home/example/.ssh/authorized_keys
+```
+
+```
+sudo chmod 700 /home/example/.ssh
+sudo chmod 600 /home/example/.ssh/authorized_keys
 ```
 
 ### Allow new user to have Sudo access
